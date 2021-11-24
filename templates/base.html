@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+<link rel="shortcut icon" href="/static/images/favicon.ico">
+    <script src="/static/Chart.min.js"></script>
+    <script src="/static/block-select.js"></script>
+    <script src="/static/search.js"></script>
+</head>
+<header>
+    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <span class="fs-4">Money app</span>
+      </a>
+
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/statistic">Статистика</a>
+          <a class="me-3 py-2 text-dark text-decoration-none" href="/posts">Расходы</a>
+          <a class="me-3 py-2 text-dark text-decoration-none btn btn-warning" href="/create-article">Добавить расход</a>
+
+      </nav>
+    </div>
+
+
+  </header>
+<body>
+ 
+{% block body %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,141 @@
+{% extends 'base.html' %} {% block title %} Добавление расходов {% endblock %} {% block body %}
+<div class="container mt-5">
+    <h1>Добавление расхода</h1>
+
+
+
+
+        <div class="dropdown">
+          <button onclick="myFilterFunction()" class="dropbtn">Выберите название</button>
+            <form method="post">
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.."  id="myInput" onkeyup="filterFunction()">
+              <a>
+	        <label class="radio">
+	<input id="title" name="title" value="Продукты" type="radio" />
+	<div onclick="myFilterFunction()" class="radio__text">Продукты</div>
+        </label>
+              </a>
+              <a>
+	        <label class="radio">
+	<input id="title" name="title" value="Кафе" type="radio" />
+	<div onclick="myFilterFunction()" class="radio__text">Кафе</div>
+        </label>
+              </a>
+              <a>
+	        <label class="radio">
+	<input id="title" name="title" value="Бензин" type="radio" />
+	<div onclick="myFilterFunction()" class="radio__text">Бензин</div>
+        </label>
+              </a>
+              <a>
+	        <label class="radio">
+	<input id="title" name="title" value="Здоровье" type="radio" />
+	<div onclick="myFilterFunction()" class="radio__text">Здоровье</div>
+        </label>
+              </a>
+              <a>
+	        <label class="radio">
+	<input id="title" name="title" value="Спорт" type="radio" />
+	<div onclick="myFilterFunction()" class="radio__text">Спорт</div>
+        </label>
+              </a>
+              <a>
+	        <label class="radio">
+	<input id="title" name="title" value="Шоппинг" type="radio" />
+	<div onclick="myFilterFunction()" class="radio__text">Шоппинг</div>
+        </label>
+              </a>
+              <a>
+	        <label class="radio">
+	<input id="title" name="title" value="Подарки" type="radio" />
+	<div onclick="myFilterFunction()" class="radio__text">Подарки</div>
+        </label>
+              </a>
+              <a>
+	        <label class="radio">
+	<input id="title" name="title" value="Такси" type="radio" />
+	<div onclick="myFilterFunction()" class="radio__text">Такси</div>
+        </label>
+              </a>
+              <a>
+	        <label class="radio">
+	<input id="title" name="title" value="Салон-красоты" type="radio" />
+	<div onclick="myFilterFunction()" class="radio__text">Салон красоты</div>
+        </label>
+              </a>
+              <a>
+	        <label class="radio">
+	<input id="title" name="title" value="Техника" type="radio" />
+	<div onclick="myFilterFunction()" class="radio__text">Техника</div>
+        </label>
+              </a>
+              <a>
+	        <label class="radio">
+	<input id="title" name="title" value="Дом" type="radio" />
+	<div onclick="myFilterFunction()" class="radio__text">Дом</div>
+        </label>
+              </a>
+              <a>
+	        <label class="radio">
+	<input id="title" name="title" value="Машина" type="radio" />
+	<div onclick="myFilterFunction()" class="radio__text">Машина</div>
+        </label>
+              </a>
+              <a>
+	        <label class="radio">
+	<input id="title" name="title" value="Зои" type="radio" />
+	<div onclick="myFilterFunction()" class="radio__text">Зои</div>
+        </label>
+              </a>
+              <a>
+	        <label class="radio">
+	<input id="title" name="title" value="Гигиена" type="radio" />
+	<div onclick="myFilterFunction()" class="radio__text">Гигиена</div>
+        </label>
+              </a>
+              <a>
+	        <label class="radio">
+	<input id="title" name="title" value="Отдых" type="radio" />
+	<div onclick="myFilterFunction()" class="radio__text">Отдых</div>
+        </label>
+              </a>
+              <a>
+	        <label class="radio">
+	<input id="title" name="title" value="Тусовки" type="radio" />
+	<div onclick="myFilterFunction()" class="radio__text">Тусовки</div>
+        </label>
+              </a>
+              <a>
+	        <label class="radio">
+	<input id="title" name="title" value="Активити" type="radio" />
+	<div onclick="myFilterFunction()" class="radio__text">Активити</div>
+        </label>
+              </a>
+              <a>
+	        <label class="radio">
+	<input id="title" name="title" value="Коммунальные\" type="radio" />
+	<div onclick="myFilterFunction()" class="radio__text">Коммунальные</div>
+        </label>
+              </a>
+
+
+
+          </div><br>
+                <input type="number" name="price" id="price" class="form-control" placeholder="Цена"><br>
+        <input type="submit" class="btn btn-success" value="Добавить"><br>
+                </form>
+        </div>
+{#            <select  type="text" name="title" id="title" class="form-select" >#}
+{#                <option type="text" name="title" id="title" >тест</option>#}
+{#                <option type="text" name="title" id="title">тест2</option>#}
+{#            </select><br>#}
+{#        <p>Или введите сами</p>#}
+{#        <input type="text" name="title" id="title" class="form-control" placeholder="Название"><br>#}
+
+
+
+
+
+</div>
+{% endblock %}
